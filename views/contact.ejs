@@ -1,0 +1,84 @@
+
+<!-- this is the contact page -->
+<!DOCTYPE HTML> <!--declaring the document is html5-->
+<html>
+    <head> <!--title-->
+        <%-include ./partials/header.ejs %>
+        <%-include ./partials/main_nav.ejs %>
+        <title> <%= title %> </title>
+        
+        <!-- The following line links to our style sheet file-->
+        <link rel="stylesheet" type="text/css" href="/css/contact.css">
+
+    <!-- linking the responsive css files for desktop, tablet and mobile-->
+    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width:960px)">
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width:481px) and (max-width: 960px)">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width:480px)">
+    </head>
+
+    
+    <body> <!--main page content-->
+        <!--All our content is enclosed in the wrapper ID style-->
+        <div id="wrapper">
+            <!--The banner ID style is inside the wrapper ID style-->
+            <div id="banner">
+            <!--the main title-->
+            <br>
+            <h1>Imama's Portfolio</h1>
+            </div>
+        
+        <!--left-column ID style is floated left and used for navigation-->
+        <div id="left-column">
+        </div> 
+
+        <div id="right-column"> <!--this column is where the form actually is-->
+            <h1> Feedback .... Stay in touch </h1>
+            <!--info for the form-->
+            <form action= "mailto:imama.meraj@ontariotechu.net?subject=Feedback on website"
+            enctype="text/plain"
+            method="post"
+            name="Form">
+            <!--asking the user their full name-->
+            <p>
+                <label for="Fname">Full Name :</label>
+                <input type="text" name="Fname" size="40"
+                placeholder="Enter your full name" required>
+            </p>
+            <!--asking the user for their phone number-->
+            <p>
+                <label for="number">Phone Number :</label>
+                <input type="phone number" name="phone number" size="40" 
+                placeholder="Enter your phone number" required>
+            </p>
+            <!--asking the user for their email address-->
+            <p>
+                <label for="email">Email :</label>
+                <input type="email" name="email" size="40" 
+                placeholder="Enter your email address" required>
+            </p>
+            <!--asking the user for any feedback they have-->
+            <p>
+                <label for="feedback">Comments :</label>
+                <textarea name="feedback" cols="60" rows="8"></textarea>
+            </p>
+            <!--if the user wants to be added to the maillist-->
+            <p>
+                <input type="checkbox" name="maillist">
+                <label for="maillist">Put me on your e-list</label>                
+            </p>
+            <!--then the rest and submission buttons at the end-->
+            <br>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <!--The clear class style clears (removes) float-->
+        <div class="clear"></div>
+
+    <!--footer section-->
+    <%-include ./partials/footer.ejs %>
+    
+        </div>
+    </body>
+</html>

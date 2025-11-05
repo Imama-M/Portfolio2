@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/* CSS Document for the contact page */
+/* My color combinations */
+/* #FFF461 #DEAE54 #F59169 #DE548B #C06DFA*/
+/* The body tag style applies to all elements on the page */
+
+/*this where the linear gradients are happening
+things like the fonts that'll be used, the padding, margin and background colours are declared here*/
+body {
+background: #8e79d9;
+background: -moz-linear-gradient(top,#B28BD9 0%, #C9BDF2 100%);
+background: -webkit-linear-gradient(top,#B28BD9 0%, #C9BDF2 100%);
+background: -o-linear-gradient(top,#B28BD9 0%, #C9BDF2 100%);
+background: linear-gradient(top,#B28BD9 0%, #C9BDF2 100%);
+font-family: Verdana, Geneva, Arial, sans-serif;
+padding:0px;
+margin:0px;
+background-color: white;
+font-family: Verdana, Geneva, Arial, sans-serif;
+padding:0px;
+margin:0px;
+}
+
+/* The wrapper ID style is used with a div tag to provide a 960px wide page 
+the measurements for the different elements are gere as well as the margins and background color*/
+#wrapper {
+width: 960px;
+height: 800px;
+margin-left: auto;
+margin-right: auto;
+background-color:#DBD0F2;
+}
+
+/* The right-column ID style is floated right 
+has some measurements and different elements */
+#right-column {
+float: right;
+width: 600px;
+height: 600px;
+background-color:#DBD0F2;
+}
+
+/* The left-column ID style is floated left
+the measurements for different elements are here as well */
+#left-column {
+float: left;
+width: 360px;
+background-color:#C9BDF2;
+height:600px;
+}
+
+/* Defining a style for a set of tags separated by commas applies the style to
+all tags */
+h1,h2,h3,h4,h5,h6,p,li {
+margin-left:15px;
+color: white;
+}
+
+/*styling the footer*/
+#footer {
+height:80px;
+color:white;
+background-color: #8e79d9;
+}
+
+/*styling the banner*/
+#banner{
+height:120px;
+background-color:#B28BD9;
+}
+
+/* Advanced Web design relies on class or ID styles, never tables
+makes the boxes  */
+.box {
+height: 100px;
+width: 100px;
+float: left;
+background-color:tan;
+margin: 15px;
+padding: 25px;
+opacity:.5;
+border-radius: 75px;
+}
+
+/* The following pseudo-class applies to the box class when in a hovered state */
+.box:hover {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+44,7db9e8+82 */
+background: radial-gradient(ellipse at center,  rgba(30,87,153,1) 44%,rgba(125,185,232,1) 82%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+/*background-color:rgb(254, 254, 254);*/
+opacity:1;
+}
+/* This clear class style terminates float */
+.clear{
+clear: both;
+}
+
+/* the next 2 sections handle the aesthetics and sizing for the button*/
+button {
+background-color:black;
+color:white;
+height:40px;
+border:2px white solid;
+/* offset-x: 10px on the right, negative value mean left*/
+/* offset-x: 10px on the down, negative value mena up*/
+box-shadow: 10px 10px 5px black;
+/* rounded corners */
+/* for one arguments all corners should be 5px */
+/* argument sequence will be
+top-left, top-right, bottom-right, bottom-left*/
+border-radius: 5px;
+}
+
+button:hover 
+{ 
+    background-color:beige; 
+    color:black; 
+    height:40px; 
+    border:2px white solid; 
+    box-shadow: -10px -10px 5px black; 
+    border-radius: 5px; 
+}
+
+

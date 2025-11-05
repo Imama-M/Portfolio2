@@ -1,0 +1,71 @@
+
+<!--this is the about me page, with a pic, intro and vid about me-->
+<!--THIS WAS THE HTML FILE FOR ASSIGNMENT 1 BUT ITS BEING ADJUSTED FOR ASSIGNMENT 2-->
+<!DOCTYPE HTML> <!--declaring the document is html5-->
+<html>
+<head> 
+    <%-include ./partials/header.ejs %>
+    <%-include ./partials/main_nav.ejs %>
+    <!--starting the head section that contains the metadata, title and link to the css files-->
+    <!--The UTF-8 character set provides the most support for all symbols and
+    characters-->
+    <meta charset="UTF-8">
+    <title> <%= title %> </title> <!--title-->
+
+    <!-- The following line links to our style sheet file-->
+     <!-- Which have had their paths changed-->
+    <link rel="stylesheet" type="text/css" href="/css/about.css">
+    <link rel="stylesheet" href="/css/desktop.css" media="screen and (min-width:960px)">
+    <link rel="stylesheet" href="/css/tablet.css" media="screen and (min-width:481px) and (max-width: 960px)">
+    <link rel="stylesheet" href="/css/mobile.css" media="screen and (max-width:480px)">
+</head>
+
+<!--Content visible in the browser's window is inside the HTML element-->
+<body>
+    
+    <!--All our content is enclosed in the wrapper ID style-->
+    <div id="wrapper">
+        <!--The banner ID style is inside the wrapper ID style-->
+        <div id="banner">
+            <h1>Imama's Portfolio</h1>
+        </div>
+    
+        <!--left-column ID style is floated left and used for navigation-->
+        <div id="left-column">
+    <!--embedding the image-->
+    <div id="picture">
+        <img src="/images/Portfolio_Pic.jpg" alt="Left Aligned" width="200" height="300">
+    </div>
+    </div>
+
+    <!--embedding the video in the right column-->
+    <div id="right-column">
+    <h2>A little bit about me </h2>
+    <video width="600" height="300" controls> <!--video controls-->
+        <source src="/videos/Portfolio_Vid.mp4" type="video/mp4">
+        <button onclick="playPause()">Play or pause the video</button> <!--buttons to control vid-->
+        <!--javascript to play/pause the video-->
+        <script>
+        var myVideo=document.getElementById("video");
+        function playPause()
+        {
+        if (myVideo.paused)
+        myVideo.play();
+        else myVideo.pause();
+        }
+        </script>
+    </video>
+    </div> <!--end of the right column here-->
+
+
+    <!--The clear class style clears (removes) float-->
+    <div class="clear"></div>
+
+    <!--footer section-->
+    <%-include ./partials/footer.ejs %>
+    
+    </div>
+    </div>
+</body>
+</html>
+

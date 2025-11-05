@@ -1,0 +1,77 @@
+@charset "UTF-8";
+/* CSS Document for the about me page
+color scheme!!
+#B28BD9
+#DBD0F2
+#8E79D9
+#C9BDF2
+#9080F2
+
+*/
+
+/*main aesthetics and sizing for the body*/
+body {
+background: #8E79D9;
+font-family: 'Times New Roman', Times, serif;
+padding:0px;
+margin:0px;
+background-color: #9080F2;
+font-family: Verdana, Geneva, Arial, sans-serif;
+padding:0px;
+margin:0px;
+}
+
+/* The wrapper ID style is used with a div tag to provide a 960px wide page 
+measurements for different things happen here*/
+#wrapper {
+width: 960px;height: 800px;
+margin-left: auto;
+margin-right: auto;
+background-color:rgb(173, 136, 236);
+}
+
+/* The right-column ID style is floated right 
+the measurements for the different elements here too*/
+#right-column {
+float: right;
+width:660px;height: 600px;
+background-color:#DBD0F2;
+}
+
+/* The left-column ID style is floated left 
+the measurements for the different elements here too*/
+#left-column {
+float: left;
+width: 300px;
+background-color:#C9BDF2;
+height:600px;
+}
+
+/* placement for the picture */
+#picture {
+padding-left: 20px;
+}
+
+
+/* Defining a style for a set of tags separated by commas applies the style to all tags */
+h1,h2,h3,h4,h5,h6,p,li {
+margin-left:15px;
+color: white;
+}
+
+/*styling the footer*/
+#footer {
+height:80px;
+}
+
+/* styling the banner*/
+#banner{
+height:120px;
+background-color:linear-gradient(top,#DBD0F2 0%, #8e79d9 100%);
+padding-top: 20px;
+}
+
+/* This clear class style terminates float */
+.clear{
+clear: both;
+}

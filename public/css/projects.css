@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/* CSS Document for the projects page */
+/* The body tag style applies to all elements on the page 
+
+these colors are from the pallete I chose and put them here for easy access
+#B28BD9
+#DBD0F2
+#8E79D9
+#C9BDF2
+#9080F2
+
+*/
+
+/*this where the linear gradients are happening
+things like the fonts that'll be used, the padding, margin and background colours are declared here*/
+body {
+background: #8e79d9;
+background: -moz-linear-gradient(top,#B28BD9 0%, #C9BDF2 100%);
+background: -webkit-linear-gradient(top,#B28BD9 0%, #C9BDF2 100%);
+background: -o-linear-gradient(top,#B28BD9 0%, #C9BDF2 100%);
+background: linear-gradient(top,#B28BD9 0%, #C9BDF2 100%);
+font-family: Verdana, Geneva, Arial, sans-serif;
+padding:0px;
+margin:0px;
+background-color: white;
+font-family: Verdana, Geneva, Arial, sans-serif;
+padding:0px;
+margin:0px;
+}
+
+/* The wrapper ID style is used with a div tag to provide a 960px wide page */
+#wrapper {
+width: 960px;height: 800px;
+margin-left: auto;
+margin-right: auto;
+background-color:rgb(173, 136, 236) ;
+}
+
+/* The right-column ID style is floated right
+and has the measurements for different things here */
+#right-column {
+float: right;
+width: 710px;height: 600px;
+background-color:#DBD0F2;
+}
+
+/* The left-column ID style is floated left 
+and has the measurements for different things here*/
+#left-column {
+float: left;
+width: 250px;background-color:#C9BDF2;
+height:600px;
+}
+
+/* Defining a style for a set of tags separated by commas applies the style to
+all tags */
+h1,h2,h3,h4,h5,h6,li {
+    color: white;
+margin-left:15px;
+}
+p {
+    font-size:10px;
+    color:white;
+    margin-left:10px;
+}
+
+/*styling for the banner*/
+#banner{
+height:120px;
+background-color:linear-gradient(top,#DBD0F2 0%, #8e79d9 100%);;
+}
+
+
+
+/* Advanced Web design relies on class or ID styles, never tables 
+colors and dimensions for the box go here*/
+.box {
+float: left;
+min-height: 120px;
+width: 45%;
+background-color:#8e79d9;
+margin: 2%;
+padding:10px
+}
+
+
+/* This clear class style terminates float */
+.clear{
+clear: both;
+}
