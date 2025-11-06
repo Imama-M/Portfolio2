@@ -1,3 +1,7 @@
+/* this code manages the rendering of the different pages and actually calls them
+there are 4 pages: home, about, projects and contact
+*/
+
 var express = require('express');
 var router = express.Router();
 
