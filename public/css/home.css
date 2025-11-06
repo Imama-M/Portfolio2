@@ -52,11 +52,19 @@ height:600px;
 background-color:#8E79D9;
 }
 
+/* The center-column ID style is floated in the center
+the measurements for the different elements are here as well as the margins and background color*/
+#left-column {
+float: left;
+width: 300px;
+height:600px;
+background-color:#8E79D9;
+}
 
 /* placement for the picture which is to be in the right column*/
 #picture {
 float: right;
-padding-right: 5%;
+padding-right: 40%;
 }
 
 /* Defining a style for a set of tags separated by commas applies the style to all tags */
