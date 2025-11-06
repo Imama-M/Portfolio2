@@ -27,19 +27,19 @@ background-color: white;
 /* The wrapper ID style is used with a div tag to provide a 960px wide page 
 the measurements for the different elements are here as well as the margins and background color*/
 #wrapper {
-width: 90%;
-height: auto;
+width: 960px;
+height: 800px;
 margin-left: auto;
 margin-right: auto;
-background-color:rgb(173, 136, 236) ;
+background-color:#8E79D9;
 }
 
 /* The right-column ID style is floated right
 the measurements for the different elements are here as well as the margins and background color*/
 #right-column {
 float: right;
-width: 70%;
-height: auto;
+width: 660px; 
+height: 600px;
 background-color:#DBD0F2;
 }
 
@@ -47,9 +47,9 @@ background-color:#DBD0F2;
 the measurements for the different elements are gere as well as the margins and background color*/
 #left-column {
 float: left;
-width: 30%;
-background-color:#C9BDF2;
-height:auto;
+width: 300px;
+height:600px;
+background-color:#8E79D9;
 }
 
 

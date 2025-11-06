@@ -31,8 +31,7 @@ margin:0px;
 /* The wrapper ID style is used with a div tag to provide a 960px wide page */
 #wrapper {
 width: 960px;height: 800px;
-margin-left: auto;
-margin-right: auto;
+margin: 0 auto;
 background-color:rgb(173, 136, 236) ;
 }
 
@@ -40,7 +39,8 @@ background-color:rgb(173, 136, 236) ;
 and has the measurements for different things here */
 #right-column {
 float: right;
-width: 710px;height: 600px;
+width: 760px;
+min-height: 600px;
 background-color:#DBD0F2;
 }
 
@@ -48,8 +48,9 @@ background-color:#DBD0F2;
 and has the measurements for different things here*/
 #left-column {
 float: left;
-width: 250px;background-color:#C9BDF2;
+width: 200px;
 height:600px;
+background-color:#C9BDF2;
 }
 
 /* Defining a style for a set of tags separated by commas applies the style to
@@ -75,11 +76,11 @@ background-color:linear-gradient(top,#DBD0F2 0%, #8e79d9 100%);;
 /* Advanced Web design relies on class or ID styles, never tables 
 colors and dimensions for the box go here*/
 .box {
-float: left;
+float: right;
 min-height: 120px;
-width: 45%;
+width: 40%;
 background-color:#8e79d9;
-margin: 2%;
+margin: 4% 5%;
 padding:10px
 }
 
